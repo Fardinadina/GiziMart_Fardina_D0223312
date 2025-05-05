@@ -6,6 +6,53 @@
     <h2 style="margin:0; font-size:2em; color:#333;">FRAMEWORK WEB BASED</h2>
     <h2 style="margin-top:0.5em; font-size:2em; color:#333;">2025</h2>
   </div>
+
+  <table border="1">
+  <thead>
+    <tr>
+      <th>Role</th>
+      <th>Fitur</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="9">Admin</td>
+      <td>Melihat dashboard admin (statistik user, produk, pesanan)</td>
+    </tr>
+    <tr><td>Mengelola pengguna (lihat, edit, nonaktifkan user)</td></tr>
+    <tr><td>Mengelola role user (admin, seller, customer)</td></tr>
+    <tr><td>Manajemen kategori produk</td></tr>
+    <tr><td>Melihat semua produk dari semua seller</td></tr>
+    <tr><td>Validasi/menonaktifkan produk yang tidak layak</td></tr>
+    <tr><td>Melihat semua pesanan (dari semua customer)</td></tr>
+    <tr><td>Melihat ulasan produk</td></tr>
+    <tr><td>Laporan penjualan umum (global)</td></tr>
+    <tr>
+      <td rowspan="8">Seller</td>
+      <td>Melihat dashboard seller (produk sendiri, pesanan masuk)</td>
+    </tr>
+    <tr><td>Menambahkan produk baru</td></tr>
+    <tr><td>Edit/hapus produk sendiri</td></tr>
+    <tr><td>Mengatur stok dan harga</td></tr>
+    <tr><td>Upload gambar produk</td></tr>
+    <tr><td>Melihat pesanan masuk untuk produk sendiri</td></tr>
+    <tr><td>Mengubah status pesanan (diproses, dikirim)</td></tr>
+    <tr><td>Melihat ulasan/review terhadap produk sendiri</td></tr>
+    <tr>
+      <td rowspan="9">Customer</td>
+      <td>Registrasi & Login</td>
+    </tr>
+    <tr><td>Melihat dan mencari produk</td></tr>
+    <tr><td>Filter berdasarkan kategori</td></tr>
+    <tr><td>Melihat detail produk (gambar, deskripsi, harga)</td></tr>
+    <tr><td>Checkout & buat pesanan</td></tr>
+    <tr><td>Melihat riwayat pesanan</td></tr>
+    <tr><td>Memberikan ulasan/review produk yang dibeli</td></tr>
+    <tr><td>Mengatur profil & alamat pengiriman</td></tr>
+    <tr><td>Mengisi dan melihat ulasan</td></tr>
+  </tbody>
+</table>
+
 <h2>1. Tabel user</h2>
 <table>
   <thead>
