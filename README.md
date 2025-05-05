@@ -1,3 +1,4 @@
+<h2>1. Tabel user</h2>
 <table>
   <thead>
     <tr>
@@ -17,6 +18,7 @@
   </tbody>
 </table>
 
+<h2>2. Tabel product</h2>
 <table>
   <thead>
     <tr>
@@ -37,6 +39,7 @@
   </tbody>
 </table>
 
+<h2>3. Tabel orders</h2>
 <table>
   <thead>
     <tr>
@@ -55,6 +58,7 @@
   </tbody>
 </table>
 
+<h>4. Tabel order_items</h>
 <table>
   <thead>
     <tr>
@@ -72,6 +76,7 @@
   </tbody>
 </table>
 
+<h>5. Tabel payment</h>
 <table>
   <thead>
     <tr>
@@ -90,6 +95,7 @@
   </tbody>
 </table>
 
+<h>6. Tabel categories</h>
 <table>
   <thead>
     <tr>
@@ -106,6 +112,7 @@
   </tbody>
 </table>
 
+<h>7. Tabel product_categories</h>
 <table>
   <thead>
     <tr>
@@ -120,6 +127,7 @@
   </tbody>
 </table>
 
+<h2>8.Tabel reviews</h2>
 <table>
   <thead>
     <tr>
