@@ -76,7 +76,7 @@
   </tbody>
 </table>
 
-<h>5. Tabel payment</h>
+<h2>5. Tabel payment</h2>
 <table>
   <thead>
     <tr>
@@ -95,7 +95,7 @@
   </tbody>
 </table>
 
-<h>6. Tabel categories</h>
+<h2>6. Tabel categories</h2>
 <table>
   <thead>
     <tr>
@@ -112,7 +112,7 @@
   </tbody>
 </table>
 
-<h>7. Tabel product_categories</h>
+<h2>7. Tabel product_categories</h2>
 <table>
   <thead>
     <tr>
