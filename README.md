@@ -202,3 +202,71 @@
     <tr><td>Updaated_at</td><td>TIMESTAMP</td><td>Waktu pembaruan ulasan</td></tr>
   </tbody>
 </table>
+<h2>Relasi</h2>
+<table border="1">
+  <thead>
+    <tr>
+      <th>Tabel 1</th>
+      <th>Tabel 2</th>
+      <th>Jenis Relasi</th>
+      <th>Keterangan</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>users</td>
+      <td>products</td>
+      <td>One to Many</td>
+      <td>Setiap user dengan role "seller" bisa memiliki banyak produk</td>
+    </tr>
+    <tr>
+      <td>users</td>
+      <td>orders</td>
+      <td>One to Many</td>
+      <td>Setiap user dengan role "customer" bisa membuat banyak order</td>
+    </tr>
+    <tr>
+      <td>orders</td>
+      <td>order_items</td>
+      <td>One to Many</td>
+      <td>Satu order bisa memiliki banyak item produk</td>
+    </tr>
+    <tr>
+      <td>products</td>
+      <td>order_items</td>
+      <td>One to Many</td>
+      <td>Satu produk bisa muncul di banyak order item berbeda</td>
+    </tr>
+    <tr>
+      <td>orders</td>
+      <td>payments</td>
+      <td>One to One</td>
+      <td>Satu order hanya memiliki satu pembayaran</td>
+    </tr>
+    <tr>
+      <td>products</td>
+      <td>product_categories</td>
+      <td>Many to Many</td>
+      <td>Satu produk bisa berada di banyak kategori dan sebaliknya</td>
+    </tr>
+    <tr>
+      <td>categories</td>
+      <td>product_categories</td>
+      <td>Many to Many</td>
+      <td>Satu kategori bisa memiliki banyak produk</td>
+    </tr>
+    <tr>
+      <td>users</td>
+      <td>reviews</td>
+      <td>One to Many</td>
+      <td>Satu user bisa memberikan banyak review</td>
+    </tr>
+    <tr>
+      <td>products</td>
+      <td>reviews</td>
+      <td>One to Many</td>
+      <td>Satu produk bisa memiliki banyak review</td>
+    </tr>
+  </tbody>
+</table>
+
