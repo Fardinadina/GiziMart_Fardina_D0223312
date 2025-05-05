@@ -1,3 +1,11 @@
+<div align="center">
+    <h2 style="margin:0; font-size:3em; color:#333;">GIZIMART</h2>
+    <img src="/public/th.jpg" alt="Logo Explore Mandar" style="display:block; margin:1em auto; max-width:80%; height:auto;" />
+    <h2 style="margin:0; font-size:2em; color:#333;">FARDINA</h2>
+    <h2 style="margin:0; font-size:2em; color:#333;">D0223312</h2>
+    <h2 style="margin:0; font-size:2em; color:#333;">FRAMEWORK WEB BASED</h2>
+    <h2 style="margin-top:0.5em; font-size:2em; color:#333;">2025</h2>
+  </div>
 <h2>1. Tabel user</h2>
 <table>
   <thead>
