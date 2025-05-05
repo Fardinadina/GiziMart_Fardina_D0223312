@@ -1,61 +1,140 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<table>
+  <thead>
+    <tr>
+      <th>Nama Field</th>
+      <th>Tipe Data</th>
+      <th>Keterangan</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Id</td><td>Int</td><td>Primary Key, Auto Increment</td></tr>
+    <tr><td>Name</td><td>Varchar(220)</td><td>Nama Pengguna</td></tr>
+    <tr><td>Email</td><td>Varchar(220)</td><td>Email unik</td></tr>
+    <tr><td>Passwoard</td><td>Varchar(220)</td><td>Password terenkripsi</td></tr>
+    <tr><td>Role</td><td>Enum (‘admin’,’seller’, ‘customer’)</td><td>Menyimpan peran pengguna</td></tr>
+    <tr><td>Created_at</td><td>TIMESTAMP</td><td>Waktu pembuatan akun</td></tr>
+    <tr><td>Updated_at</td><td>TIMESTAMP</td><td>Waktu pembaruan akun</td></tr>
+  </tbody>
+</table>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+<table>
+  <thead>
+    <tr>
+      <th>Nama Field</th>
+      <th>Tipe Data</th>
+      <th>Keterangan</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Id</td><td>Int</td><td>Primary Key, Auto Increment</td></tr>
+    <tr><td>Seller_id</td><td>Int</td><td>Foreign Key (users)</td></tr>
+    <tr><td>Name</td><td>Varchar(220)</td><td>Nama produk</td></tr>
+    <tr><td>Description</td><td>Text</td><td>Deskripsi produk</td></tr>
+    <tr><td>Price</td><td>Decimal(10,2)</td><td>Harga produk</td></tr>
+    <tr><td>Stok</td><td>Int</td><td>Jumlah stok produk</td></tr>
+    <tr><td>Created_at</td><td>TIMESTAMP</td><td>Waktu pembuatan produk</td></tr>
+    <tr><td>Updated_at</td><td>TIMESTAMP</td><td>Waktu pembaruan produk</td></tr>
+  </tbody>
+</table>
 
-## About Laravel
+<table>
+  <thead>
+    <tr>
+      <th>Nama Field</th>
+      <th>Tipe Data</th>
+      <th>Keterangan</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Id</td><td>Int</td><td>Primary Key, Auto Increment</td></tr>
+    <tr><td>Customer_id</td><td>Int</td><td>Foreign Key (users)</td></tr>
+    <tr><td>Total_harga</td><td>Decimal(10,2)</td><td>Total harga order</td></tr>
+    <tr><td>Status</td><td>ENUM('pending', 'completed', 'cancelled')</td><td>Status pesanan</td></tr>
+    <tr><td>Created_at</td><td>TIMESTAMP</td><td>Waktu pembuatan order</td></tr>
+    <tr><td>Updated_at</td><td>TIMESTAMP</td><td>Waktu pembaruan order</td></tr>
+  </tbody>
+</table>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+<table>
+  <thead>
+    <tr>
+      <th>Nama Field</th>
+      <th>Tipe Data</th>
+      <th>Keterangan</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Id</td><td>Int</td><td>Primary Key, Auto Increment</td></tr>
+    <tr><td>Order_id</td><td>Int</td><td>Foreign Key (orders)</td></tr>
+    <tr><td>Product_id</td><td>Int</td><td>Foreign Key (products)</td></tr>
+    <tr><td>Quantity</td><td>Int</td><td>Jumlah produk dalam order</td></tr>
+    <tr><td>Price</td><td>Decimal(10,2)</td><td>Harga per item</td></tr>
+  </tbody>
+</table>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+<table>
+  <thead>
+    <tr>
+      <th>Nama Field</th>
+      <th>Tipe Data</th>
+      <th>Keterangan</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Id</td><td>Int</td><td>Primary Key, Auto Increment</td></tr>
+    <tr><td>Order_id</td><td>Int</td><td>Foreign Key (orders)</td></tr>
+    <tr><td>Payment_method</td><td>ENUM('credit_card', 'bank_transfer', 'paypal')</td><td>Metode pembayaran</td></tr>
+    <tr><td>Payment_status</td><td>ENUM('pending', 'completed', 'failed')</td><td>Status pembayaran</td></tr>
+    <tr><td>Amount</td><td>Decimal(10,2)</td><td>Jumlah yang dibayar</td></tr>
+    <tr><td>Paid_at</td><td>TIMESTAMP</td><td>Waktu pembayaran</td></tr>
+  </tbody>
+</table>
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+<table>
+  <thead>
+    <tr>
+      <th>Nama Field</th>
+      <th>Tipe Data</th>
+      <th>Keterangan</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Id</td><td>Int</td><td>Primary Key, Auto Increment</td></tr>
+    <tr><td>Nama</td><td>Varchar(220)</td><td>Nama kategori</td></tr>
+    <tr><td>Created_at</td><td>TIMESTAMP</td><td>Waktu pembuatan kategori</td></tr>
+    <tr><td>Updaated_at</td><td>TIMESTAMP</td><td>Waktu pembaruan kategori</td></tr>
+  </tbody>
+</table>
 
-## Learning Laravel
+<table>
+  <thead>
+    <tr>
+      <th>Nama Field</th>
+      <th>Tipe Data</th>
+      <th>Keterangan</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Product_id</td><td>Int</td><td>Foreign Key (products)</td></tr>
+    <tr><td>Category_id</td><td>Int</td><td>Foreign Key (categories)</td></tr>
+  </tbody>
+</table>
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development/)**
-- **[Active Logic](https://activelogic.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+<table>
+  <thead>
+    <tr>
+      <th>Nama Field</th>
+      <th>Tipe Data</th>
+      <th>Keterangan</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Id</td><td>BigInt</td><td>Primary Key, Auto Increment</td></tr>
+    <tr><td>User_id</td><td>ForeignId</td><td>Relasi ke users.id</td></tr>
+    <tr><td>Product_id</td><td>ForeignId</td><td>Relasi ke products.id</td></tr>
+    <tr><td>Rating</td><td>Tinyint</td><td>Skala penilaian (1–5)</td></tr>
+    <tr><td>Comment</td><td>Text</td><td>Isi komentar ulasan</td></tr>
+    <tr><td>Created_at</td><td>TIMESTAMP</td><td>Waktu pembuatan ulasan</td></tr>
+    <tr><td>Updaated_at</td><td>TIMESTAMP</td><td>Waktu pembaruan ulasan</td></tr>
+  </tbody>
+</table>
