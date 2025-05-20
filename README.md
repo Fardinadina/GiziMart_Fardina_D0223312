@@ -1,6 +1,6 @@
 <div align="center">
     <h2 style="margin:0; font-size:3em; color:#333;">GIZIMART</h2>
-    <img src="/public/lgo.jpg" alt="Logo Explore Mandar" style="display:block; margin:1em auto; max-width:80%; height:auto;" />
+    <img src="/Gizimart.png" alt="Logo GiziMart" style="display:block; margin:1em auto; max-width:80%; height:auto;" />
     <h2 style="margin:0; font-size:2em; color:#333;">FARDINA</h2>
     <h2 style="margin:0; font-size:2em; color:#333;">D0223312</h2>
     <h2 style="margin:0; font-size:2em; color:#333;">FRAMEWORK WEB BASED</h2>
